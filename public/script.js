@@ -28,6 +28,7 @@ const showCrafts = async () => {
             document.getElementById("title").textContent = craftJSON[f].name;
             document.getElementById("description").textContent=craftJSON[f].description;
             document.getElementById("popupImage").src="./images/"+craftJSON[f].image;
+            listDiv.innerHTML="";
             for(let i = 0; i < craftJSON[f].supplies.length; i++) {
                 let k = document.createElement("li")
                 k.textContent=craftJSON[f].supplies[i];
